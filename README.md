@@ -1,0 +1,1 @@
+This is Tripadvisor clone website for practice purpose
