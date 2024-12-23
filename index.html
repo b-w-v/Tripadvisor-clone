@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripAdvisor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!--Navbar-->
+    <div class="navbar">
+        <div class="navbar__logo">
+            <img src="images/tripicon.png" alt="TripAdvisor Logo" class="logo-icon" />
+            <span class="navbar__brand">Tripadvisor</span>
+
+        </div>
+
+        <!-- 3-dot menu for mobile -->
+        <div class="navbar__menu">
+            <i class="fas fa-ellipsis-h" id="menu-icon"></i>
+        </div>
+
+        <!--Navigation Links-->
+        <ul class="navbar__links">
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Trips</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Forums</a></li>
+        </ul>
+
+        <!-- Right Section: Globe, INR, and Sign In -->
+        <div class="navbar__right">
+            <div class="currency-box">
+                <div class="globe-icon-container">
+                    <img src="./images/global.png" alt="Globe Icon" class="globe-icon">
+                </div>
+                <span class="separator">|</span>
+                <div class="currency-container">
+                    <span class="currency">INR</span>
+                </div>
+            </div>
+            <div class="signin-box">
+                Sign In
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <h1>Where to?</h1>
+        <div class="search-options">
+            <div class="option active">
+                <i class="fas fa-search"></i> Search All
+            </div>
+            <div class="option">
+                <i class="fas fa-hotel"></i> Hotels
+            </div>
+            <div class="option">
+                <i class="fas fa-suitcase"></i> Things to Do
+            </div>
+            <div class="option">
+                <i class="fas fa-utensils"></i> Restaurants
+            </div>
+            <div class="option">
+                <i class="fas fa-plane"></i> Flights
+            </div>
+            <div class="option">
+                <i class="fas fa-home"></i> Holiday Homes
+            </div>
+    </div>
+        <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Places to go, things to do, hotels..." />
+            <button class="search-button">Search</button>
+        </div>
+        <div class="center-image-container">
+            <img src="./images/trip.jpg" alt="Centered Image" class="center-image">
+        </div>
+
+        <div class="image-cards-section">
+            <h2>Treat yourself to an award-winning meal</h2>
+            <p>2024’s Travellers’ Choice Awards Best of the Best Restaurants</p>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./images/finedining.jpg" alt="Fine Dining">
+                    <div class="badge">2024</div>
+                    <div class="card-title">Fine Dining</div>
+                </div>
+                <div class="card">
+                    <img src="./images/datenight.jpg" alt="Date Night">
+                    <div class="badge">2024</div>
+                    <div class="card-title">Date Night</div>
+                </div>
+                <div class="card">
+                    <img src="./images/casualdining.jpg" alt="Casual Dining">
+                    <div class="badge">2024</div>
+                    <div class="card-title">Casual Dining</div>
+                </div>
+                <div class="card">
+                    <img src="./images/hiddengems.jpg" alt="Hidden Gems">
+                    <div class="badge">2024</div>
+                    <div class="card-title">Hidden Gems</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="travel-creator-section">
+            <h2>Get inspired by our fave travel creators</h2>
+            <p class="sub-heading">Tried-and-true guidance to fuel your next big trip</p>
+            <div class="creator-cards">
+                <div class="creator-card">
+                    <img src="./images/Rome.jpg" alt="Rome" class="creator-image">
+                    <p class="creator-name">By Ashlyn S</p>
+                    <h3 class="creator-title">3 family-friendly days in Rome</h3>
+                    <div class="creator-info">
+                        <span class="heart-icon">❤️</span>
+                        <span class="items-count">30 items</span>
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <img src="./images/mexico.jpg" alt="Mexico City" class="creator-image">
+                    <p class="creator-name">By Eileen Ivette</p>
+                    <h3 class="creator-title">The ultimate 'workcation' in Mexico City</h3>
+                    <div class="creator-info">
+                        <span class="heart-icon">❤️</span>
+                        <span class="items-count">28 items</span>
+                    </div>
+                </div>
+                <div class="creator-card">
+                    <img src="./images/tourist.jpg" alt="Barcelona" class="creator-image">
+                    <p class="creator-name">By Two Bad Tourists</p>
+                    <h3 class="creator-title">Exploring LGBTQ+-friendly Barcelona</h3>
+                    <div class="creator-info">
+                        <span class="heart-icon">❤️</span>
+                        <span class="items-count">28 items</span>
+                    </div>
+                </div>
+
+        <div class="watch-wanderer-section">
+            <div class="wanderer-content">
+                <div class="wanderer-image">
+                    <img src="./images/wanderer.jpg" alt="ATV riders" />
+                    </div>
+                    <div class="wanderer-text">
+                        <p class="sponsored">Sponsored by <a href="#">Wanderlab</a></p>
+                        <h2>Watch The Wanderer</h2>
+                        <p>Tripadvisor’s award-winning travel series, now streaming on Amazon Prime Video</p>
+                        <button class="learn-more">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="travellers-choice-section">
+            <div class="choice-content">
+                <div class="choice-text">
+                    <div class="choice-logo">
+                    <img src="./images/suitcase.png" alt="TripAdvisor Icon" />
+                    </div>
+                    <h2>Travellers' Choice <br> Awards Best of the Best</h2>
+                    <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+                    <button class="see-winners">See the winners</button>
+                </div>
+                    <div class="choice-image">
+                        <img src="./images/travels.jpg" alt="Travellers' Choice" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>About Tripadvisor</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Resources and Policies</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Trust & Safety</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Accessibility Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#">Write a review</a></li>
+                        <li><a href="#">Add a Place</a></li>
+                        <li><a href="#">Join</a></li>
+                        <li><a href="#">Travellers' Choice</a></li>
+                        <li><a href="#">GreenLeaders</a></li>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">Travel Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Do Business With Us</h4>
+                    <ul>
+                        <li><a href="#">Owners & DMO/CVB</a></li>
+                        <li><a href="#">Business Advantage</a></li>
+                        <li><a href="#">Sponsored Placements</a></li>
+                        <li><a href="#">Access our Content API</a></li>
+                    </ul>
+                    <h4>Get The App</h4>
+                    <ul>
+                        <li><a href="#">iPhone App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Tripadvisor Sites</h4>
+                    <p><a href="#">Book tours and attraction tickets on Viator</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-logo">
+                    <img src="./images/tripicon.png" alt="Tripadvisor Logo" />
+                </div>
+                <p>© 2024 Tripadvisor LLC All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Terms of Use</a> |
+                    <a href="#">Privacy and Cookies Statement</a> |
+                    <a href="#">Cookie consent</a> |
+                    <a href="#">Site Map</a> |
+                    <a href="#">Contact us</a>
+                </div>
+                <p class="footer-note">This is the version of our website addressed to speakers of English in India. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. <a href="#">more</a></p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
